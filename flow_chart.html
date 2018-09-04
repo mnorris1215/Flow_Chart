@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Daily Routine Checker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"/>
+  <style type="text/css">
+
+  .container-fluid {
+    background-repeat: no-repeat;
+    background-image: linear-gradient(#29323c, #485563);
+    height: 100%;
+  }
+
+  #form, #Submit, #cc{
+    color: white;
+    text-shadow: 2px 2px black;
+    font-size: 20px;
+  }
+
+  #title{
+    color: #3798DC;
+    text-shadow: 2px 2px black;
+  }
+  </style>
+</head>
+
+<body class="text-center">
+  <div class="container-fluid"><!--Responsive full width for all devices
+    .container is used for responsive pixels-->
+
+    <!--Values assigned based on importance of task-->
+  <div id="title">
+    <h1>Daily Routine Tracker</h1>
+    <h2>Check What You Have Completed, and Be Rewarded</h2>
+    <h3>3 points = 1 hour of leisure</h3>
+  </div>
+  <br />
+  <br />
+    <form id='form'>
+      <div class="row no-gutters">
+        <div class="col-12 col-sm-6 col-md-8">
+      Did you wake up at 6:30am or earlier?
+    </div>
+      <div class="col-6 col-md-4">
+      <input type="checkbox" class="form-check-input"></input>
+      </div>
+    </div>
+      <br />
+      <br />
+      <div class="row no-gutters">
+        <div class="col-12 col-sm-6 col-md-8">
+      Did you take meds on time?
+    </div>
+    <div class="col-6 col-md-4">
+      <input type="checkbox" class="form-check-input"></input>
+    </div>
+  </div>
+      <br />
+      <br />
+      <div class="row no-gutters">
+        <div class="col-12 col-sm-6 col-md-8">
+      Did you complete exercise routine?
+    </div>
+      <div class="col-6 col-md-4">
+      <input type="checkbox" class="form-check-input"></input>
+    </div>
+  </div>
+      <br />
+      <br />
+      <div class="row no-gutters">
+        <div class="col-12 col-sm-6 col-md-8">
+      Clean anything lately?
+    </div>
+      <div class="col-6 col-md-4">
+      <input type="checkbox" class="form-check-input"></input>
+    </div>
+  </div>
+      <!--
+<div class="hidden">
+      What did you clean?
+      <input type="text" name="textbox" />
+    </div>-->
+      <br />
+      <br />
+      <div class="row no-gutters">
+        <div class="col-12 col-sm-6 col-md-8">
+      Code today?
+    </div>
+    <div class="col-6 col-md-4">
+      <input type="checkbox" class="form-check-input"></input>
+    </div>
+  </div>
+      <!--
+<div class="hidden">
+      How many hours?
+      <input type="number" name="textbox" />
+    </div>-->
+
+      <br />
+      <br />
+      <div class="row no-gutters">
+        <div class="col-12 col-sm-6 col-md-8">
+      Did you cook?
+    </div>
+    <div class="col-6 col-md-4">
+      <input type="checkbox" class="form-check-input"></input>
+    </div>
+  </div>
+      <br />
+      <br />
+      <div class="row no-gutters">
+        <div class="col-12 col-sm-6 col-md-8">
+      Did you work?
+    </div>
+    <div class="col-6 col-md-4">
+      <input type="checkbox" class="form-check-input"></input>
+    </div>
+  </div>
+      <br />
+      <br />
+      <div class="row no-gutters">
+        <div class="col-12 col-sm-6 col-md-8">
+      Did you complete a Wonder Project?
+    </div>
+    <div class="col-6 col-md-4">
+      <input type="checkbox" class="form-check-input"></input>
+    </div>
+  </div>
+      <br />
+      <br />
+      <div class="row no-gutters">
+        <div class="col-12 col-sm-6 col-md-8">
+      Are you watching your diet?
+    </div>
+    <div class="col-6 col-md-4">
+      <input type="checkbox" class="form-check-input"></input>
+    </div>
+  </div>
+      <br />
+      <br />
+      <!--
+  <div class="hidden">
+      How many calories consumed today?
+      <input type="number" name="textbox" />
+      <br />
+      <br />  -->
+
+
+      <div class="row no-gutters">
+        <div class="col-12 col-sm-6 col-md-8">
+      Volunteer Today?
+    </div>
+    <div class="col-6 col-md-4">
+      <input type="checkbox" class="form-check-input"></input>
+    </div>
+  </div>
+      <br />
+      <br />
+      <button id="Submit" class="button btn btn-primary">Submit</button>
+    </form>
+    <br />
+    <br />
+    <div id="cc"><!--Where the counter will display-->
+    </div>
+    <br />
+    <br />
+  </div>
+  <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+  <script type="text/javascript" src="flow_chart.js"></script>
+
+</body>
+
+</html>
